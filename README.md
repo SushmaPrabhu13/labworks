@@ -108,6 +108,22 @@ cv2.waitKey(0)
 
 **output**
 
+**Q4).Write a program to convert color image into gray scale and
+binary image.**
+**Description**Grayscaling is the process of converting an image from other color spaces e.g RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and complete white. A binary image is a monochromatic image that consists of pixels that can have one of exactly two colors, usually black and white. cv2.threshold works as, if pixel value is greater than a threshold value, it is assigned one value (may be white), else it is assigned another value (may be black). destroyAllWindows() simply destroys all the windows we created. To destroy any specific window, use the function cv2. destroyWindow() where you pass the exact window name.
+**Program**
+import cv2
+img=cv2.imread(&quot;cat.jpg&quot;,0)
+cv2.imshow(&quot;cat&quot;,img)
+ret, bw_img = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
+bw = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
+cv2.imshow(&quot;Binary&quot;, bw_img)
+cv2.waitKey()
+cv2.destroyAllWindows()
+
+**output**
+
+
 
 
 
