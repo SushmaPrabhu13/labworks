@@ -1,4 +1,23 @@
-**1.Develop a program to display grayscale image using read and write operation.**
+**Q1.Develop a program to display grayscale image using read and write operation.**
+Description Grayscaling is the process of converting an image from other color spaces e.g RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and
+complete white. Importance of grayscaling Dimension reduction: For e.g. In RGB
+images there are three color channels and has three dimensions while grayscaled
+images are single dimensional. Reduces model complexity: Consider training neural
+article on RGB images of 10x10x3 pixel.The input layer will have 300 input nodes. On
+the other hand, the same neural network will need only 100 input node for grayscaled
+images. For other algorithms to work: There are many algorithms that are customized to
+work only on grayscaled images e.g. Canny edge detection function pre-implemented in
+OpenCV library works on Grayscaled images only.
+
+imread() : is used for reading an image. imwrite(): is used to write an image in memory
+to disk. imshow() :to display an image. waitKey(): The function waits for specified
+milliseconds for any keyboard event. destroyAllWindows():function to close all the
+windows. cv2. cvtColor() method is used to convert an image from one color space to
+another For color conversion, we use the function cv2. cvtColor(input_image, flag)
+where flag determines the type of conversion. For BGR Gray conversion we use the
+flags cv2.COLOR_BGR2GRAY np.concatenate: Concatenation refers to joining. This
+function is used to join two or more arrays of the same shape along a specified axis.
+
 import cv2
 import numpy as np
 
@@ -16,5 +35,6 @@ cv2.waitKey()
 
 **output**
 ![image](https://user-images.githubusercontent.com/72405086/105021141-057c5680-5a6a-11eb-8a84-cbbf6439c83c.png)
+
 
 
