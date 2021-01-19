@@ -82,7 +82,7 @@ cv2.destroyAllWindows()
 **output**
 ![image](https://user-images.githubusercontent.com/72405086/105060972-f8c62580-5a9e-11eb-89df-fd2c4c528829.png)
 
-**Q)Develop a program to find sum and mean of a set of images.
+**Q3)Develop a program to find sum and mean of a set of images.
 Create n number of images and read the directory and perform
 operation.**
 **Description** You can add two images with the OpenCV function, cv. add(), or simply by the numpy operation res = img1 + img2. The function mean calculates the mean value M of array elements, independently for each channel, and return it:" This mean it should return you a scalar for each layer of you image The append() method in python adds a single item to the existing list. listdir() method in python is used to get the list of all files and directories in the specified directory.
