@@ -125,7 +125,24 @@ cv2.destroyAllWindows()
 **output**
 ![image](https://user-images.githubusercontent.com/72405086/105062529-b43b8980-5aa0-11eb-97c1-a233192227e5.png)
 
-
+**Q5).Write a program to convert color image into different color
+space.**
+**Description** Color spaces are a way to represent the color channels present in the image that gives the image that particular hue BGR color space: OpenCV’s default color space is RGB. HSV color space: It stores color information in a cylindrical representation of RGB color points. It attempts to depict the colors as perceived by the human eye. Hue value varies from 0-179, Saturation value varies from 0-255 and Value value varies from 0-255. LAB color space : L – Represents Lightness.A – Color component ranging from Green to Magenta.B – Color component ranging from Blue to Yellow. The HSL color space, also called HLS or HSI, stands for:Hue : the color type Ranges from 0 to 360° in most applications Saturation : variation of the color depending on the lightness. Lightness :(also Luminance or Luminosity or Intensity). Ranges from 0 to 100% (from black to white). YUV:Y refers to the luminance or intensity, and U/V channels represent color information. This works well in many applications because the human visual system perceives intensity information very differently from color information.
+**program**
+import cv2
+img=cv2.imread(&quot;cat.jpg&quot;)
+gray_img=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+cv2.imshow(&#39;gray scale image&#39;,gray_img)
+cv2.waitKey()
+yuv_img=cv2.cvtColor(img,cv2.COLOR_BGR2YUV)
+cv2.imshow(&#39;yuv&#39;,yuv_img)
+cv2.waitKey()
+hsv_img=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+cv2.imshow(&#39;HSV&#39;,hsv_img)
+cv2.waitKey()
+hls_img=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)
+cv2.imshow(&#39;HLS&#39;,hls_img)
+cv2.waitKey()
 
 
 
