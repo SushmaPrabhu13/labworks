@@ -65,7 +65,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows(0)
 
 **output**
-
+![image](https://user-images.githubusercontent.com/72405086/105061175-3a56d080-5a9f-11eb-8626-d0515cd3ca94.png)
 
 B) **Rotating of image**. Description Image rotation is a common image processing routine used to rotate images at any desired angle. This helps in image reversal, flipping, and obtaining an intended view of the image. Image rotation has applications in matching, alignment, and other image-based algorithms. OpenCV is a well-known library used for image processing. cv2.getRotationMatrix2D Perform the counter clockwise rotation warpAffine() function is the size of the output image, which should be in the form of (width, height). Remember width = number of columns, and height = number of rows.
 Program
