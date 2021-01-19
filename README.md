@@ -144,6 +144,8 @@ hls_img=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)
 cv2.imshow(&#39;HLS&#39;,hls_img)
 cv2.waitKey()
 
+**output**
+![image](https://user-images.githubusercontent.com/72405086/105063148-683d1480-5aa1-11eb-993f-678aed7dcbbb.png)
 
 
 
