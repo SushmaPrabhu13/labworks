@@ -1,5 +1,7 @@
-**Q1.Develop a program to display grayscale image using read and write operation.**
-Description Grayscaling is the process of converting an image from other color spaces e.g RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and
+**Q1).Develop a program to display grayscale image using read and write operation.**
+
+**Description**
+Grayscaling is the process of converting an image from other color spaces e.g RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and
 complete white. Importance of grayscaling Dimension reduction: For e.g. In RGB
 images there are three color channels and has three dimensions while grayscaled
 images are single dimensional. Reduces model complexity: Consider training neural
@@ -38,7 +40,8 @@ cv2.waitKey()
 
 **Q2) Develop the program to perform linear transformation on image. Description**
 
-**Program Rotation of the image**: A)Scaling Description Image resizing refers to the
+**Program Rotation of the image**:
+A)Scaling Description Image resizing refers to the
 scaling of images. Scaling comes handy in many image processing as well as machine
 learning applications. It helps in reducing the number of pixels from an image
 
@@ -67,7 +70,10 @@ cv2.destroyAllWindows(0)
 **output**
 ![image](https://user-images.githubusercontent.com/72405086/105061175-3a56d080-5a9f-11eb-8626-d0515cd3ca94.png)
 
-B) **Rotating of image**. Description Image rotation is a common image processing routine used to rotate images at any desired angle. This helps in image reversal, flipping, and obtaining an intended view of the image. Image rotation has applications in matching, alignment, and other image-based algorithms. OpenCV is a well-known library used for image processing. cv2.getRotationMatrix2D Perform the counter clockwise rotation warpAffine() function is the size of the output image, which should be in the form of (width, height). Remember width = number of columns, and height = number of rows.
+B) **Rotating of image**.
+**Description** 
+
+Image rotation is a common image processing routine used to rotate images at any desired angle. This helps in image reversal, flipping, and obtaining an intended view of the image. Image rotation has applications in matching, alignment, and other image-based algorithms. OpenCV is a well-known library used for image processing. cv2.getRotationMatrix2D Perform the counter clockwise rotation warpAffine() function is the size of the output image, which should be in the form of (width, height). Remember width = number of columns, and height = number of rows.
 Program
 import cv2 
 import numpy as np 
@@ -86,7 +92,8 @@ cv2.destroyAllWindows()
 Create n number of images and read the directory and perform
 operation.**
 
-**Description** You can add two images with the OpenCV function, cv. add(), or simply by the numpy operation res = img1 + img2. The function mean calculates the mean value M of array elements, independently for each channel, and return it:" This mean it should return you a scalar for each layer of you image The append() method in python adds a single item to the existing list. listdir() method in python is used to get the list of all files and directories in the specified directory.
+**Description** 
+You can add two images with the OpenCV function, cv. add(), or simply by the numpy operation res = img1 + img2. The function mean calculates the mean value M of array elements, independently for each channel, and return it:" This mean it should return you a scalar for each layer of you image The append() method in python adds a single item to the existing list. listdir() method in python is used to get the list of all files and directories in the specified directory.
 
 **Program**
 import cv2
@@ -114,7 +121,8 @@ cv2.waitKey(0)
 **Q4).Write a program to convert color image into gray scale and
 binary image.**
 
-**Description**Grayscaling is the process of converting an image from other color spaces e.g RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and complete white. A binary image is a monochromatic image that consists of pixels that can have one of exactly two colors, usually black and white. cv2.threshold works as, if pixel value is greater than a threshold value, it is assigned one value (may be white), else it is assigned another value (may be black). destroyAllWindows() simply destroys all the windows we created. To destroy any specific window, use the function cv2. destroyWindow() where you pass the exact window name.
+**Description**
+Grayscaling is the process of converting an image from other color spaces e.g RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and complete white. A binary image is a monochromatic image that consists of pixels that can have one of exactly two colors, usually black and white. cv2.threshold works as, if pixel value is greater than a threshold value, it is assigned one value (may be white), else it is assigned another value (may be black). destroyAllWindows() simply destroys all the windows we created. To destroy any specific window, use the function cv2. destroyWindow() where you pass the exact window name.
 
 **Program**
 import cv2
@@ -132,7 +140,8 @@ cv2.destroyAllWindows()
 **Q5).Write a program to convert color image into different color
 space.**
 
-**Description** Color spaces are a way to represent the color channels present in the image that gives the image that particular hue BGR color space: OpenCV’s default color space is RGB. HSV color space: It stores color information in a cylindrical representation of RGB color points. It attempts to depict the colors as perceived by the human eye. Hue value varies from 0-179, Saturation value varies from 0-255 and Value value varies from 0-255. LAB color space : L – Represents Lightness.A – Color component ranging from Green to Magenta.B – Color component ranging from Blue to Yellow. The HSL color space, also called HLS or HSI, stands for:Hue : the color type Ranges from 0 to 360° in most applications Saturation : variation of the color depending on the lightness. Lightness :(also Luminance or Luminosity or Intensity). Ranges from 0 to 100% (from black to white). YUV:Y refers to the luminance or intensity, and U/V channels represent color information. This works well in many applications because the human visual system perceives intensity information very differently from color information.
+**Description**
+Color spaces are a way to represent the color channels present in the image that gives the image that particular hue BGR color space: OpenCV’s default color space is RGB. HSV color space: It stores color information in a cylindrical representation of RGB color points. It attempts to depict the colors as perceived by the human eye. Hue value varies from 0-179, Saturation value varies from 0-255 and Value value varies from 0-255. LAB color space : L – Represents Lightness.A – Color component ranging from Green to Magenta.B – Color component ranging from Blue to Yellow. The HSL color space, also called HLS or HSI, stands for:Hue : the color type Ranges from 0 to 360° in most applications Saturation : variation of the color depending on the lightness. Lightness :(also Luminance or Luminosity or Intensity). Ranges from 0 to 100% (from black to white). YUV:Y refers to the luminance or intensity, and U/V channels represent color information. This works well in many applications because the human visual system perceives intensity information very differently from color information.
 
 **program**
 import cv2
@@ -157,7 +166,8 @@ cv2.waitKey()
 
 **Q6).Develop a program to create an image from 2D array.**
 
-**Description**2D array can be defined as an array of arrays. The 2D array is organized as matrices which can be represented as the collection of rows and columns. However, 2D arrays are created to implement a relational database look alike data structure. numpy.zeros() function returns a new array of given shape and type, with zeros. Image.fromarray(array) is creating image object of above array
+**Description**
+2D array can be defined as an array of arrays. The 2D array is organized as matrices which can be represented as the collection of rows and columns. However, 2D arrays are created to implement a relational database look alike data structure. numpy.zeros() function returns a new array of given shape and type, with zeros. Image.fromarray(array) is creating image object of above array
 
 **program**
 from PIL import Image
