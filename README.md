@@ -64,5 +64,8 @@ print (&#39;Error while reading files !!!&#39;)
 cv2.waitKey(0)
 cv2.destroyAllWindows(0)
 
+**output**
+
+
 
 
