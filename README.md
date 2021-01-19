@@ -149,5 +149,18 @@ cv2.waitKey()
 ![image](https://user-images.githubusercontent.com/72405086/105063398-b4885480-5aa1-11eb-979f-e7de2d857984.png)
 
 
+**Q6).Develop a program to create an image from 2D array.**
+**Description**2D array can be defined as an array of arrays. The 2D array is organized as matrices which can be represented as the collection of rows and columns. However, 2D arrays are created to implement a relational database look alike data structure. numpy.zeros() function returns a new array of given shape and type, with zeros. Image.fromarray(array) is creating image object of above array
+**program**
+from PIL import Image
+import numpy as np
+w, h =512,213
+data= np.zeros((h,w,3),dtype=np.uint8)
+data[0:256,0:256]=[255,0,0]
+img=Image.fromarray(data,&#39;RGB&#39;)
+img.save(&#39;my.png&#39;)
+img.show()
+**output**
+
 
 
