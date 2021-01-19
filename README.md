@@ -36,5 +36,33 @@ cv2.waitKey()
 **output**
 ![image](https://user-images.githubusercontent.com/72405086/105021141-057c5680-5a6a-11eb-8a84-cbbf6439c83c.png)
 
+**Q2) Develop the program to perform linear transformation on image. Description**
+
+**Program Rotation of the image**: A)Scaling Description Image resizing refers to the
+scaling of images. Scaling comes handy in many image processing as well as machine
+learning applications. It helps in reducing the number of pixels from an image
+
+cv2.resize() method refers to the scaling of images. Scaling comes handy in many
+image processing as well as machine learning applications. It helps in reducing the
+number of pixels from an image imshow() function in pyplot module of matplotlib library
+is used to display data as an image
+
+import cv2
+import numpy as np
+FILE_NAME = &#39;cat.jpg&#39;
+try:
+img = cv2.imread(FILE_NAME)
+(height, width) = img.shape[:2]
+res = cv2.resize(img, (int(width / 2), int(height / 2)), interpolation =
+cv2.INTER_CUBIC)
+cv2.imwrite(&#39;result.jpg&#39;, res)
+cv2.imshow(&#39;image&#39;,img)
+cv2.imshow(&#39;result&#39;,res)
+cv2.waitKey(0)
+except IOError:
+print (&#39;Error while reading files !!!&#39;)
+cv2.waitKey(0)
+cv2.destroyAllWindows(0)
+
 
 
