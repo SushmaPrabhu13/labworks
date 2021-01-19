@@ -15,5 +15,6 @@ cv2.imshow('cat', numpy_horizontal_concat)
 cv2.waitKey()
 
 **output**
+![image](https://user-images.githubusercontent.com/72405086/105021141-057c5680-5a6a-11eb-8a84-cbbf6439c83c.png)
 
 
