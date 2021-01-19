@@ -107,6 +107,7 @@ cv2.imshow(&#39;mean&#39;,len(im)/im)
 cv2.waitKey(0)
 
 **output**
+![image](https://user-images.githubusercontent.com/72405086/105062304-76d6fc00-5aa0-11eb-891d-db4db818fa04.png)
 
 **Q4).Write a program to convert color image into gray scale and
 binary image.**
