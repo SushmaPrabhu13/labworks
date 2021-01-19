@@ -183,4 +183,24 @@ img.show()
 ![image](https://user-images.githubusercontent.com/72405086/105063807-2e204280-5aa2-11eb-8f61-62ee73332daa.png)
 
 
+**Q7)Find the sum of neighborhood value of the matrix.**
+
+**Description** 
+The append() method appends an element to the end of the list. shape() is a tuple that gives dimensions of the array.. shape is a tuple that gives you an indication of the number of dimensions in the array. So in your case, since the index value of Y.
+
+**Program**
+import numpy as np 
+M = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+M = np.asarray(M)
+N = np.zeros(M.shape) 
+def sumNeighbors(M,x,y): l = [] 
+for i in range(max(0,x-1),x+2):# max(0,x-1),such that no negative values in range()
+for j in range(max(0,y-1),y+2): try: t = M[i][j] l.append(t) except IndexError: # if entry doesn't exist pass return sum(l)-M[x][y] # exclude the entry itself for i in range(M.shape[0]):
+for j in range(M.shape[1]):
+N[i][j] = sumNeighbors(M, i, j)
+print ("Original matrix:\n", M) 
+print ("Summed neighbors matrix:\n", N)
+
+**output**
+
 
