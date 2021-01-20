@@ -321,6 +321,31 @@ int main()
 return 0;
 }
 **output**
-![image](https://user-images.githubusercontent.com/72405086/105155585-c8c76280-5b30-11eb-90b6-ad6a3aed01f4.png)
+Enter the row and column size for the  matrix
+2
+2
+Enter the elements of the matrix
+6
+7
+5
+8
+Enter the row and column size for the  matrix
+2
+2
+Enter the elements of the matrix
+2
+3
+1
+4
+addition is
+ 8      10
+ 6      12
+subtraction is
+ 4      4
+ 4      4
+multiplication is
+ 19     46
+ 18     47
+
 
 
