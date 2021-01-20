@@ -347,7 +347,5 @@ multiplication is
  19     46
  18     47
 
-**Q9)Find the neighbour matrix.**
 
-**program**
 
